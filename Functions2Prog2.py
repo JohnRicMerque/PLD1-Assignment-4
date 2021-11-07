@@ -11,6 +11,8 @@ def getPrice(apl_number, org_number):
     total = apl_price + org_price
     return total
 
-apples, oranges = getNaplNorg()
-print(apples)
-print(oranges)
+# start, calling functions and assigning them to variables
+applesN, orangesN = getNaplNorg()
+totalPrice = getPrice(applesN, orangesN)
+
+print(f"The total amount is {totalPrice} pesos.")
